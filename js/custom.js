@@ -7,3 +7,13 @@
  * License URI:http://support.wrapbootstrap.com/
  * File Description: Place here your custom scripts
  */
+
+$(function() {
+   $('#datetimepicker12').datetimepicker({
+     autoclose: true,
+     todayBtn: true,
+     pickerPosition: "center"
+   }).on('changeDate', function(ev){
+   $('#datetimepicker12').datetimepicker('hide');
+   });
+ });
