@@ -10,10 +10,6 @@
 
 $(function() {
    $('#datetimepicker12').datetimepicker({
-     autoclose: true,
-     todayBtn: true,
-     container: '#myModal',
-     pickerPosition: "center"
    }).on('changeDate', function(ev){
    $('#datetimepicker12').datetimepicker('hide');
    });
@@ -61,7 +57,7 @@ var lat;
                      vars[hash[0]] = hash[1];
                  }
                  return vars;
-             }
+             };
 
              function GetLocation() {
                   var geocoder = new google.maps.Geocoder();

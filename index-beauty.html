@@ -48,7 +48,7 @@
 		<!-- Custom css -->
 		<link href="css/custom.css" rel="stylesheet">
 		<link href="css/jquery-ui.css" rel="stylesheet">
-		<link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2708/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+		<link href="css/bootstrap-datetimepicker.css" rel="stylesheet" />
 
 
 </head>
@@ -846,9 +846,12 @@
 			      <div class="modal-body">
 							<div class="input-append date">
 								<h5 class="logo-font">Select your date:</h5>
-								<input type="text" data-format="dd/MM/yyyy hh:mm:ss" id="datetimepicker12" data-date-container='#myModal'></input>
-								<button type="button" class="btn btn-default" onclick="location.href='register.html'">Submit</button>
-	            </div>
+							<form id="datetime" action="register.html" method="get">
+								<input type="text" name="datetime" data-format="dd/MM/yyyy hh:mm:ss" id="datetimepicker12" data-date-container='#myModal' required></input>
+								<input id="button" class="btn btn-default" type="submit"></button>
+							</form>
+
+							</div>
 			      </div>
 						<div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1351,7 +1354,9 @@
 		<!-- Initialization of Plugins -->
 		<script type="text/javascript" src="js/template.js"></script>
 		<!-- Custom Scripts -->
-		<!--script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2708/bootstrap-datetimepicker.min.js"></script>-->
+		<script type="text/javascript" src="js/moment.js"></script>
+
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
 	</body>
 </html>
