@@ -4970,7 +4970,7 @@ header.full-width .dropdown-menu .dropdown-menu.to-left {
     left: auto!important;
   }
 }
-/* Mega Menu 
+/* Mega Menu
 ------------------------------ */
 .mega-menu.dropdown {
   position: static;
@@ -5055,7 +5055,7 @@ header .dropdown-menu > li.active > a i.fa-circle-o:before {
   border-color: #f7f7f7;
   text-decoration: none;
 }
-/* Arrow for parent menu item 
+/* Arrow for parent menu item
 ------------------------------ */
 .dropdown > a:before {
   font-family: 'FontAwesome';
@@ -5097,7 +5097,7 @@ header .dropdown-menu > li.active > a i.fa-circle-o:before {
 .header.centered:not(.dark) .dropdown .dropdown.open > a:before {
   color: #09afdf;
 }
-/* Dropdown animations 
+/* Dropdown animations
 ------------------------------ */
 .animated.main-navigation .navbar-nav .open .dropdown-menu,
 #offcanvas.animated .open .dropdown-menu,
@@ -6434,7 +6434,7 @@ ul.tweets li span {
   font-size: 12px;
   color: #777777;
 }
-/* Media 
+/* Media
 ---------------------------------- */
 .media {
   margin-top: 0;
@@ -7774,3 +7774,21 @@ h6.media-heading {
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
+
+@import url('assets/css/bootstrap.min.css');
+@import url('assets/css/bootstrap-responsive.min.css');
+/* New styles */
+
+label.valid {
+	width: 24px;
+	height: 24px;
+	background: url(assets/img/valid.png) center center no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+}
+label.error {
+	font-weight: bold;
+	color: red;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
